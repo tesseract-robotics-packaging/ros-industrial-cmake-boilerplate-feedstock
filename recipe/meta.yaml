@@ -8,17 +8,16 @@ source:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - gtest
     - gmock
     - cmake
     - ninja # [win]
     - make # [linux]
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
     - lcov # [linux]
 
 build:
-  skip: true # [py<38]
   number: 0
 
 about:
