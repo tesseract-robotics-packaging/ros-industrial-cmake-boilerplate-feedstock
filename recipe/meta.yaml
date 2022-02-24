@@ -1,0 +1,26 @@
+package:
+  name: ros-industrial-cmake-boilerplate
+  version: 0.2.14
+
+source:
+  - git_url: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate.git
+    git_rev: 0.2.14
+
+requirements:
+  build:
+    - gtest
+    - gmock
+    - cmake
+    - ninja # [win]
+    - make # [linux]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - lcov # [linux]
+
+build:
+  skip: true # [py<38]
+  number: 0
+
+about:
+  home: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate
+  summary: A collection of boilerplate CMake scripts and marcos
