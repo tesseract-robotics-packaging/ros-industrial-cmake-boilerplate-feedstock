@@ -9,5 +9,5 @@ cmake -DCMAKE_INSTALL_PREFIX:PATH=$PREFIX \
   -S ros_industrial_cmake_boilerplate \
   -B build_dir
 
-cmake --build . --config Release -- -j$CPU_COUNT
-cmake --build . --config Release --target install
+cmake --build build_dir --config Release -- -j$CPU_COUNT
+cmake --build build_dir --config Release --target install
