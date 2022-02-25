@@ -15,12 +15,12 @@ jobs:
         include:
           - CONFIG: linux_64_
             SHORT_CONFIG: linux_64_
-            UPLOAD_PACKAGES: False
+            UPLOAD_PACKAGES: True
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
             os: ubuntu
           - CONFIG: win_64_
             SHORT_CONFIG: win_64_
-            UPLOAD_PACKAGES: False
+            UPLOAD_PACKAGES: True
             os: windows
     steps:
     - name: Checkout code
