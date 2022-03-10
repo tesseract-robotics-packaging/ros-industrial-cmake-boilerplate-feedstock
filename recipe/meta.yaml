@@ -21,7 +21,7 @@ requirements:
     - lcov # [linux]
 
 build:
-  number: 0
+  number: 1
 
 about:
   home: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate
