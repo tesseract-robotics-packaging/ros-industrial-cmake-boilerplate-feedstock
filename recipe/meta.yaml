@@ -20,6 +20,13 @@ requirements:
     - make # [linux]
     - lcov # [linux]
 
+test:
+  commands:
+    - test -d ${PREFIX}/lib/cmake/ros_industrial_cmake_boilerplate  # [unix]
+    - test -f ${PREFIX}/lib/cmake/ros_industrial_cmake_boilerplate/ros_industrial_cmake_boilerplate-config.cmake  # [unix]
+    - if not exist %LIBRARY_PREFIX%\lib\cmake\ros_industrial_cmake_boilerplate (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\cmake\ros_industrial_cmake_boilerplate\ros_industrial_cmake_boilerplate-config.cmake (exit 1)  # [win]
+
 build:
   number: 1
 
