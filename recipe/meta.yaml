@@ -5,6 +5,7 @@ package:
 source:
   - git_url: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate.git
     git_rev: 0.2.14
+    folder: src
 
 requirements:
   build:
