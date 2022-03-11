@@ -3,7 +3,7 @@ About ros-industrial-cmake-boilerplate
 
 Home: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate
 
-Package license: 
+Package license: Apache-2.0 AND BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/ros-industrial-cmake-boilerplate-feedstock/blob/master/LICENSE.txt)
 
@@ -73,4 +73,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@johnwason](https://github.com/johnwason/)
 
