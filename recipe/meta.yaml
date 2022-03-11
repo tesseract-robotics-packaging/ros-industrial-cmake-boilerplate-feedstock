@@ -28,8 +28,18 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\ros_industrial_cmake_boilerplate\ros_industrial_cmake_boilerplate-config.cmake (exit 1)  # [win]
 
 build:
-  number: 2
+  number: 3
 
 about:
   home: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate
   summary: A collection of boilerplate CMake scripts and marcos
+  license: Apache-2.0 AND BSD-3-Clause
+  license_file: 
+    - src/LICENSE
+    - src/LICENSE.Apache-2.0
+    - src/LICENSE.BSD-3-Clause
+
+extra:
+  recipe-maintainers:
+    - johnwason
+  
