@@ -28,7 +28,7 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\ros_industrial_cmake_boilerplate\ros_industrial_cmake_boilerplate-config.cmake (exit 1)  # [win]
 
 build:
-  number: 4
+  number: 5
 
 about:
   home: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate
