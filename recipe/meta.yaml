@@ -1,4 +1,4 @@
-{% set version = "0.2.14" %}
+{% set version = "0.5.3" %}
 
 package:
   name: ros-industrial-cmake-boilerplate
@@ -28,7 +28,7 @@ test:
     - if not exist %LIBRARY_PREFIX%\lib\cmake\ros_industrial_cmake_boilerplate\ros_industrial_cmake_boilerplate-config.cmake (exit 1)  # [win]
 
 build:
-  number: 5
+  number: 0
 
 about:
   home: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate
