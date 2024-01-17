@@ -5,9 +5,9 @@ package:
   version: {{ version }}
 
 source:
-  - git_url: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate.git
-    git_rev: {{ version }}
-    folder: src
+  - url: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate/archive/refs/tags/{{ version }}.tar.gz
+    sha256: ab8ec7d9ee166c5af43ee7ff159210efca787628f8e98e0fdd9fbab3292b5c63
+    folder: src/ros_industrial_cmake_boilerplate
 
 requirements:
   build:
@@ -35,9 +35,9 @@ about:
   summary: A collection of boilerplate CMake scripts and marcos
   license: Apache-2.0 AND BSD-3-Clause
   license_file: 
-    - src/LICENSE
-    - src/LICENSE.Apache-2.0
-    - src/LICENSE.BSD-3-Clause
+    - src/ros_industrial_cmake_boilerplate/LICENSE
+    - src/ros_industrial_cmake_boilerplate/LICENSE.Apache-2.0
+    - src/ros_industrial_cmake_boilerplate/LICENSE.BSD-3-Clause
 
 extra:
   recipe-maintainers:
