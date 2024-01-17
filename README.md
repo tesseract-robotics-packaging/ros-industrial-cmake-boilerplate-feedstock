@@ -1,11 +1,11 @@
-About ros-industrial-cmake-boilerplate
-======================================
+About ros-industrial-cmake-boilerplate-feedstock
+================================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/ros-industrial-cmake-boilerplate-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate
 
 Package license: Apache-2.0 AND BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/ros-industrial-cmake-boilerplate-feedstock/blob/master/LICENSE.txt)
 
 Summary: A collection of boilerplate CMake scripts and marcos
 
@@ -33,16 +33,41 @@ conda config --add channels tesseract-robotics
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics` channel has been enabled, `ros-industrial-cmake-boilerplate` can be installed with:
+Once the `tesseract-robotics` channel has been enabled, `ros-industrial-cmake-boilerplate` can be installed with `conda`:
 
 ```
 conda install ros-industrial-cmake-boilerplate
 ```
 
-It is possible to list all of the versions of `ros-industrial-cmake-boilerplate` available on your platform with:
+or with `mamba`:
+
+```
+mamba install ros-industrial-cmake-boilerplate
+```
+
+It is possible to list all of the versions of `ros-industrial-cmake-boilerplate` available on your platform with `conda`:
 
 ```
 conda search ros-industrial-cmake-boilerplate --channel tesseract-robotics
+```
+
+or with `mamba`:
+
+```
+mamba search ros-industrial-cmake-boilerplate --channel tesseract-robotics
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search ros-industrial-cmake-boilerplate --channel tesseract-robotics
+
+# List packages depending on `ros-industrial-cmake-boilerplate`:
+mamba repoquery whoneeds ros-industrial-cmake-boilerplate --channel tesseract-robotics
+
+# List dependencies of `ros-industrial-cmake-boilerplate`:
+mamba repoquery depends ros-industrial-cmake-boilerplate --channel tesseract-robotics
 ```
 
 
