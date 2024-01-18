@@ -5,4 +5,4 @@ cxx_compiler:
 channel_sources:
   - conda-forge
 channel_targets:
-  - tesseract-robotics labels/dev/indv
+  - tesseract-robotics dev/indv
