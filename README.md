@@ -26,14 +26,14 @@ Current release info
 Installing ros-industrial-cmake-boilerplate
 ===========================================
 
-Installing `ros-industrial-cmake-boilerplate` from the `tesseract-robotics/label/labels/dev/indv` channel can be achieved by adding `tesseract-robotics/label/labels/dev/indv` to your channels with:
+Installing `ros-industrial-cmake-boilerplate` from the `tesseract-robotics/label/dev/indv` channel can be achieved by adding `tesseract-robotics/label/dev/indv` to your channels with:
 
 ```
-conda config --add channels tesseract-robotics/label/labels/dev/indv
+conda config --add channels tesseract-robotics/label/dev/indv
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics/label/labels/dev/indv` channel has been enabled, `ros-industrial-cmake-boilerplate` can be installed with `conda`:
+Once the `tesseract-robotics/label/dev/indv` channel has been enabled, `ros-industrial-cmake-boilerplate` can be installed with `conda`:
 
 ```
 conda install ros-industrial-cmake-boilerplate
@@ -48,26 +48,26 @@ mamba install ros-industrial-cmake-boilerplate
 It is possible to list all of the versions of `ros-industrial-cmake-boilerplate` available on your platform with `conda`:
 
 ```
-conda search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/labels/dev/indv
+conda search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev/indv
 ```
 
 or with `mamba`:
 
 ```
-mamba search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/labels/dev/indv
+mamba search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev/indv
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/labels/dev/indv
+mamba repoquery search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev/indv
 
 # List packages depending on `ros-industrial-cmake-boilerplate`:
-mamba repoquery whoneeds ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/labels/dev/indv
+mamba repoquery whoneeds ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev/indv
 
 # List dependencies of `ros-industrial-cmake-boilerplate`:
-mamba repoquery depends ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/labels/dev/indv
+mamba repoquery depends ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev/indv
 ```
 
 
