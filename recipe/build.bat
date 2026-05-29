@@ -1,14 +1,15 @@
 @echo off
 
-rmdir /s /q src/ros_industrial_cmake_boilerplate
-mkdir src\ros_industrial_cmake_boilerplate
-tar xf source.tar.gz --strip-components=1 -C src/ros_industrial_cmake_boilerplate
+if exist src rmdir /s /q src
+mkdir src
+echo */ci/* > tar_excludes.txt
+tar xf source.tar.gz --strip-components=1 -C src -X tar_excludes.txt
 
 cmake -GNinja ^
   -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
   -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^
   -DCMAKE_BUILD_TYPE:STRING=Release ^
-  -S src/ros_industrial_cmake_boilerplate ^
+  -S src ^
   -B build_dir
 if %errorlevel% neq 0 exit /b %errorlevel%
 cmake --build build_dir --config Release -j 4

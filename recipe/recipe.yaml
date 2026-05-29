@@ -44,9 +44,9 @@ about:
   summary: A collection of boilerplate CMake scripts and marcos
   license: Apache-2.0 AND BSD-3-Clause
   license_file:
-    - src/ros_industrial_cmake_boilerplate/LICENSE
-    - src/ros_industrial_cmake_boilerplate/LICENSE.Apache-2.0
-    - src/ros_industrial_cmake_boilerplate/LICENSE.BSD-3-Clause
+    - src/LICENSE
+    - src/LICENSE.Apache-2.0
+    - src/LICENSE.BSD-3-Clause
   homepage: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate
 
 extra:
