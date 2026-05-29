@@ -13,7 +13,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/tesseract-robotics/ros-industrial-cmake-boilerplate-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/tesseract-robotics/ros-industrial-cmake-boilerplate-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -26,14 +33,14 @@ Current release info
 Installing ros-industrial-cmake-boilerplate
 ===========================================
 
-Installing `ros-industrial-cmake-boilerplate` from the `tesseract-robotics/label/dev_indv` channel can be achieved by adding `tesseract-robotics/label/dev_indv` to your channels with:
+Installing `ros-industrial-cmake-boilerplate` from the `tesseract-robotics/label/` channel can be achieved by adding `tesseract-robotics/label/` to your channels with:
 
 ```
-conda config --add channels tesseract-robotics/label/dev_indv
+conda config --add channels tesseract-robotics/label/
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics/label/dev_indv` channel has been enabled, `ros-industrial-cmake-boilerplate` can be installed with `conda`:
+Once the `tesseract-robotics/label/` channel has been enabled, `ros-industrial-cmake-boilerplate` can be installed with `conda`:
 
 ```
 conda install ros-industrial-cmake-boilerplate
@@ -48,26 +55,26 @@ mamba install ros-industrial-cmake-boilerplate
 It is possible to list all of the versions of `ros-industrial-cmake-boilerplate` available on your platform with `conda`:
 
 ```
-conda search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev_indv
+conda search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
 ```
 
 or with `mamba`:
 
 ```
-mamba search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev_indv
+mamba search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev_indv
+mamba repoquery search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
 
 # List packages depending on `ros-industrial-cmake-boilerplate`:
-mamba repoquery whoneeds ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev_indv
+mamba repoquery whoneeds ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
 
 # List dependencies of `ros-industrial-cmake-boilerplate`:
-mamba repoquery depends ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/dev_indv
+mamba repoquery depends ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
 ```
 
 
@@ -85,7 +92,7 @@ merged, the recipe will be re-built and uploaded automatically to the
 everybody to install and use from the `tesseract-robotics` channel.
 Note that all branches in the tesseract-robotics/ros-industrial-cmake-boilerplate-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
