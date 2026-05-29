@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: ros-industrial-cmake-boilerplate
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://github.com/ros-industrial/ros_industrial_cmake_boilerplate/archive/refs/tags/{{ version }}.tar.gz
-    sha256: ab8ec7d9ee166c5af43ee7ff159210efca787628f8e98e0fdd9fbab3292b5c63
+    sha256: faee6cd5101b49c92d9499d8e32e851833e5a94acbe09c892e4a87f23a5aa3cd
     folder: src/ros_industrial_cmake_boilerplate
 
 requirements:
