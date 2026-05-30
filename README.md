@@ -33,14 +33,14 @@ Current release info
 Installing ros-industrial-cmake-boilerplate
 ===========================================
 
-Installing `ros-industrial-cmake-boilerplate` from the `tesseract-robotics/label/` channel can be achieved by adding `tesseract-robotics/label/` to your channels with:
+Installing `ros-industrial-cmake-boilerplate` from the `tesseract-robotics` channel can be achieved by adding `tesseract-robotics` to your channels with:
 
 ```
-conda config --add channels tesseract-robotics/label/
+conda config --add channels tesseract-robotics
 conda config --set channel_priority strict
 ```
 
-Once the `tesseract-robotics/label/` channel has been enabled, `ros-industrial-cmake-boilerplate` can be installed with `conda`:
+Once the `tesseract-robotics` channel has been enabled, `ros-industrial-cmake-boilerplate` can be installed with `conda`:
 
 ```
 conda install ros-industrial-cmake-boilerplate
@@ -55,26 +55,26 @@ mamba install ros-industrial-cmake-boilerplate
 It is possible to list all of the versions of `ros-industrial-cmake-boilerplate` available on your platform with `conda`:
 
 ```
-conda search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
+conda search ros-industrial-cmake-boilerplate --channel tesseract-robotics
 ```
 
 or with `mamba`:
 
 ```
-mamba search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
+mamba search ros-industrial-cmake-boilerplate --channel tesseract-robotics
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
+mamba repoquery search ros-industrial-cmake-boilerplate --channel tesseract-robotics
 
 # List packages depending on `ros-industrial-cmake-boilerplate`:
-mamba repoquery whoneeds ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
+mamba repoquery whoneeds ros-industrial-cmake-boilerplate --channel tesseract-robotics
 
 # List dependencies of `ros-industrial-cmake-boilerplate`:
-mamba repoquery depends ros-industrial-cmake-boilerplate --channel tesseract-robotics/label/
+mamba repoquery depends ros-industrial-cmake-boilerplate --channel tesseract-robotics
 ```
 
 
@@ -105,5 +105,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Levi-Armstrong](https://github.com/Levi-Armstrong/)
 * [@johnwason](https://github.com/johnwason/)
+* [@traversaro](https://github.com/traversaro/)
 

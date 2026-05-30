@@ -3,7 +3,7 @@ c_compiler:
 channel_sources:
 - conda-forge
 channel_targets:
-- tesseract-robotics
+- tesseract-robotics main
 cxx_compiler:
 - vs2022
 target_platform:
