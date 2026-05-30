@@ -1,7 +1,7 @@
 channel_sources:
   - conda-forge
 channel_targets:
-  - tesseract-robotics
+  - tesseract-robotics main
 
 libboost_devel:
 - '1.88'
